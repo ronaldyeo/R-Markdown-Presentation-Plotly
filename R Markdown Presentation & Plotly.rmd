@@ -1,0 +1,21 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "Ronald"
+date: "23 Jan 2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Plotly
+```{r, echo = FALSE, message = FALSE}
+library(plotly)
+plot_ly(data = iris, x = ~Sepal.Width, y = ~Sepal.Length, 
+        z = ~Petal.Length, color =  ~Species)
+```
+
+## End
+
+Thank you!
